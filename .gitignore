@@ -1,7 +1,5 @@
 node_modules
 
-node_modules
-
 # Hardhat files
 /cache
 /artifacts
@@ -13,3 +11,6 @@ node_modules
 # solidity-coverage files
 /coverage
 /coverage.json
+
+
+pnpm-lock.yaml
