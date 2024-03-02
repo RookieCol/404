@@ -1,6 +1,8 @@
 {
+  "name": "404",
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.1",
+    "@types/dotenv": "^8.2.0",
     "chai": "^4.4.1",
     "dn404": "^0.0.2",
     "dotenv": "^16.4.5",
@@ -9,6 +11,15 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.4",
-    "hardhat": "^2.20.1"
+    "hardhat": "^2.20.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:marketplace": "hardhat run scripts/deployMarketpalce.ts",
+    "deploy:token": "hardhat run scripts/deployToken.ts",
+    "front": "cd frontend && pnpm dev"
   }
 }
